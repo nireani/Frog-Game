@@ -1,0 +1,137 @@
+body{
+    background-color: #e4e71f;
+    font-family: 'Balthazar', serif;
+}
+
+#container{
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "b b b"
+    "b b b"   
+    "b b b"   
+    "f s l"
+}
+
+.box{
+    grid-area: b;
+    box-shadow: black;
+    max-height: 50px;
+}
+
+.header{
+    grid-area: h;
+    background-color: aqua;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2%;
+    box-shadow: 1px 1px 5px #2c3e50;
+}
+
+.frogLeftBox{
+    grid-area: f;
+    background-color: aqua;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Balthazar', serif;
+    font-size: 1em;
+    box-shadow: 1px 1px 5px #2c3e50;
+
+}
+.start{
+    grid-area: s;
+    background-color: rgb(0, 255, 76);
+    text-align: center;
+    padding: 5%;
+    font-family: 'Balthazar', serif;
+    font-size: 1em;
+    box-shadow: 1px 1px 5px #2c3e50;
+    cursor: pointer;
+
+}
+.restart{
+    grid-area: s;
+    background-color: rgb(0, 255, 76);
+    text-align: center;
+    padding: 5%;
+    font-family: 'Balthazar', serif;
+    font-size: 1em;
+    box-shadow: 1px 1px 5px #2c3e50;
+    cursor: pointer;
+
+}
+.Catch{
+    grid-area: s;
+    background-color: rgb(0, 255, 76);
+    text-align: center;
+    padding: 5%;
+    font-family: 'Balthazar', serif;
+    font-size: 1em;
+    box-shadow: 1px 1px 5px #2c3e50;
+}
+
+.start:active{
+    background-color: #13a58d
+}
+.restart:active{
+    background-color: #13a58d
+}
+
+.level{
+    grid-area: l;
+    background-color: aqua;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Balthazar', serif;
+    font-size: 1em;
+    box-shadow: 1px 1px 5px #2c3e50;
+
+}
+
+
+.fa-frog{
+    cursor: pointer;
+    color: #e74c3c;
+}
+#frogStart{
+    color: #e74c3c;
+    font-size: 1em;
+}
+
+
+
+.instruction{
+    
+    grid-area: b;
+    cursor: pointer;
+    color: #000000;
+    font-size: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Balthazar', serif;
+    box-shadow: 1px 1px 5px #2c3e50;
+    
+}
+.win{
+
+    background-image: url("https://media.giphy.com/media/3oI9JBnChEnNcFsCac/giphy.gif");
+    width: 400px;
+    height: 70%;
+    margin: auto;
+    display: block;
+}
+.lost{
+
+    background-image: url("https://media.giphy.com/media/c6VuVMnObHgL6coJtr/giphy.gif");
+    width: 400px;
+    height: 70%;
+    margin: auto;
+    display: block;
+}
+
+#timer{
+    display: inline-block
+}
