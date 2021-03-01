@@ -29,6 +29,7 @@ $(".start").click(function () {
     $('#frog1').css('margin-top', `${randomMarginTop}`)
     $('#frog1').css('margin-left', `${randomMarginLeft}`)
     $('#frog1').css('font-size', `${frogi.randomFontSize(randomMarginTop)}`)
+    $('#frog1').css('color', `${frogi.randomColor()}`)
 }
 )
 

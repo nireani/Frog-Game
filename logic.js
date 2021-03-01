@@ -1,21 +1,42 @@
 const Frogi = function () {
     const randomFontSize = function (randomMarginTop) {
  let randomMarginTopNum = (randomMarginTop.match(/\d+/)[0]);
-        if (randomMarginTopNum <= 4) {
+        if (randomMarginTopNum <= 2) {
             return 1 + 'em'
         }
-        else if (randomMarginTopNum <= 8) {
+        else if (randomMarginTopNum <= 4) {
+            return 1.5 + 'em'
+        }
+        else if (randomMarginTopNum <= 4) {
             return 2 + 'em'
         }
-        else if (randomMarginTopNum <= 12) {
+        else if (randomMarginTopNum <= 4) {
+            return 2.5 + 'em'
+        }
+        else if (randomMarginTopNum <= 6) {
             return 3 + 'em'
         }
-         else if (randomMarginTopNum <= 16) {
+        else if (randomMarginTopNum <= 8) {
+            return 3.5 + 'em'
+        }
+        else if (randomMarginTopNum <= 10) {
             return 4 + 'em'
         }
-         else if (randomMarginTopNum <= 20)
+        else if (randomMarginTopNum <= 12) {
+            return 4.5 + 'em'
+        }
+         else if (randomMarginTopNum <= 16) {
             return 5 + 'em'
+        }
+         else if (randomMarginTopNum <= 20)
+            return 5.5 + 'em'
     }
+
+    const  randomColor =function(){
+        return '#'+Math.floor(Math.random()*16777215).toString(16); 
+       }  
+
+
 
     const countDown = () => {
         timer--;
@@ -59,6 +80,7 @@ const Frogi = function () {
         $('#frog1').css('margin-top', `${randomMarginTop}`)
         $('#frog1').css('margin-left', `${randomMarginLeft}`)
         $('#frog1').css('font-size', `${randomFontSize(randomMarginTop)}`)
+        $('#frog1').css('color', `${randomColor()}`)
     }
 
     const game1 = function () {
@@ -75,6 +97,7 @@ const Frogi = function () {
         $('#frog1').css('margin-top', `${randomMarginTop}`)
         $('#frog1').css('margin-left', `${randomMarginLeft}`)
         $('#frog1').css('font-size', `${randomFontSize(randomMarginTop)}`)
+        $('#frog1').css('color', `${randomColor()}`)
 
 
     }
@@ -96,11 +119,15 @@ const Frogi = function () {
         $('#frog1').css('margin-top', `${randomMarginTop}`)
         $('#frog1').css('margin-left', `${randomMarginLeft}`)
         $('#frog1').css('font-size', `${randomFontSize(randomMarginTop)}`)
+        $('#frog1').css('color', `${randomColor()}`)
+
         const randomMarginTop2 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft2 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog2').css('margin-top', `${randomMarginTop2}`)
         $('#frog2').css('margin-left', `${randomMarginLeft2}`)
         $('#frog2').css('font-size', `${randomFontSize(randomMarginTop2)}`)
+        $('#frog2').css('color', `${randomColor()}`)
+
 
     }
 
@@ -122,16 +149,22 @@ const Frogi = function () {
         $('#frog1').css('margin-top', `${randomMarginTop}`)
         $('#frog1').css('margin-left', `${randomMarginLeft}`)
         $('#frog1').css('font-size', `${randomFontSize(randomMarginTop)}`)
+        $('#frog1').css('color', `${randomColor()}`)
+
         const randomMarginTop2 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft2 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog2').css('margin-top', `${randomMarginTop2}`)
         $('#frog2').css('margin-left', `${randomMarginLeft2}`)
         $('#frog2').css('font-size', `${randomFontSize(randomMarginTop2)}`)
+        $('#frog2').css('color', `${randomColor()}`)
+
         const randomMarginTop3 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft3 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog3').css('margin-top', `${randomMarginTop3}`)
         $('#frog3').css('margin-left', `${randomMarginLeft3}`)
         $('#frog3').css('font-size', `${randomFontSize(randomMarginTop3)}`)
+        $('#frog3').css('color', `${randomColor()}`)
+
     }
 
 
@@ -153,21 +186,29 @@ const Frogi = function () {
         $('#frog1').css('margin-top', `${randomMarginTop}`)
         $('#frog1').css('margin-left', `${randomMarginLeft}`)
         $('#frog1').css('font-size', `${randomFontSize(randomMarginTop)}`)
+        $('#frog1').css('color', `${randomColor()}`)
+
         const randomMarginTop2 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft2 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog2').css('margin-top', `${randomMarginTop2}`)
         $('#frog2').css('margin-left', `${randomMarginLeft2}`)
         $('#frog2').css('font-size', `${randomFontSize(randomMarginTop2)}`)
+        $('#frog2').css('color', `${randomColor()}`)
+
         const randomMarginTop3 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft3 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog3').css('margin-top', `${randomMarginTop3}`)
         $('#frog3').css('margin-left', `${randomMarginLeft3}`)
         $('#frog3').css('font-size', `${randomFontSize(randomMarginTop3)}`)
+        $('#frog3').css('color', `${randomColor()}`)
+
         const randomMarginTop4 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft4 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog4').css('margin-top', `${randomMarginTop4}`)
         $('#frog4').css('margin-left', `${randomMarginLeft4}`)
         $('#frog4').css('font-size', `${randomFontSize(randomMarginTop4)}`)
+        $('#frog4').css('color', `${randomColor()}`)
+
     }
 
 
@@ -189,31 +230,41 @@ const Frogi = function () {
         $('#frog1').css('margin-top', `${randomMarginTop}`)
         $('#frog1').css('margin-left', `${randomMarginLeft}`)
         $('#frog1').css('font-size', `${randomFontSize(randomMarginTop)}`)
+        $('#frog1').css('color', `${randomColor()}`)
         const randomMarginTop2 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft2 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog2').css('margin-top', `${randomMarginTop2}`)
         $('#frog2').css('margin-left', `${randomMarginLeft2}`)
         $('#frog2').css('font-size', `${randomFontSize(randomMarginTop2)}`)
+        $('#frog2').css('color', `${randomColor()}`)
+
         const randomMarginTop3 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft3 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog3').css('margin-top', `${randomMarginTop3}`)
         $('#frog3').css('margin-left', `${randomMarginLeft3}`)
         $('#frog3').css('font-size', `${randomFontSize(randomMarginTop3)}`)
+        $('#frog3').css('color', `${randomColor()}`)
+
         const randomMarginTop4 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft4 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog4').css('margin-top', `${randomMarginTop4}`)
         $('#frog4').css('margin-left', `${randomMarginLeft4}`)
         $('#frog4').css('font-size', `${randomFontSize(randomMarginTop4)}`)
+        $('#frog4').css('color', `${randomColor()}`)
+
         const randomMarginTop5 = Math.floor((Math.random() * 20) + 1) + '%'
         const randomMarginLeft5 = Math.floor((Math.random() * 90) + 1) + '%'
         $('#frog5').css('margin-top', `${randomMarginTop5}`)
         $('#frog5').css('margin-left', `${randomMarginLeft5}`)
         $('#frog5').css('font-size', `${randomFontSize(randomMarginTop5)}`)
+        $('#frog5').css('color', `${randomColor()}`)
+
     }
 
     return {
         countDown: countDown,
         restart: restart,
+        randomColor:randomColor,
         game1: game1,
         game2: game2,
         game3: game3,
