@@ -26,10 +26,9 @@ $(".start").click(function () {
         <div class="level">level-${level}</div>`)
     const randomMarginTop = Math.floor((Math.random() * 20) + 1) + '%'
     const randomMarginLeft = Math.floor((Math.random() * 90) + 1) + '%'
-    const randomFontSize = Math.floor((Math.random() * 5) + 1) + 'em'
     $('#frog1').css('margin-top', `${randomMarginTop}`)
     $('#frog1').css('margin-left', `${randomMarginLeft}`)
-    $('#frog1').css('font-size', `${randomFontSize}`)
+    $('#frog1').css('font-size', `${frogi.randomFontSize(randomMarginTop)}`)
 }
 )
 
