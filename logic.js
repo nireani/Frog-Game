@@ -4,10 +4,10 @@ const Frogi = function () {
         if (randomMarginTopNum <= 2) {
             return 1 + 'em'
         }
-        else if (randomMarginTopNum <= 4) {
+        else if (randomMarginTopNum <= 1) {
             return 1.5 + 'em'
         }
-        else if (randomMarginTopNum <= 4) {
+        else if (randomMarginTopNum <= 2) {
             return 2 + 'em'
         }
         else if (randomMarginTopNum <= 4) {
